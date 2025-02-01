@@ -1,7 +1,7 @@
 on:
   schedule:
     # Runs at 12:00 UTC (noon) every day
-    - cron: "0 12 * * *"
+    - cron: "0 0 * 1 0"
   workflow_dispatch: # Allows manual triggering
 
   
