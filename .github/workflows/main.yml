@@ -4,8 +4,13 @@ on:
     - cron: "0 12 * * *"
   workflow_dispatch: # Allows manual triggering
 
+  
 jobs:
-  test:
+  collect-iss-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
       - name: 22f3003029@ds.study.iitm.ac.in
         run: echo "Hello, world!"
